@@ -1,4 +1,4 @@
-package com.azad.practice.java.tryThis2_2;
+package com.azad.practice.java.try_this_projects.no_2_2;
 
 public class LogicalOpTable {
 
