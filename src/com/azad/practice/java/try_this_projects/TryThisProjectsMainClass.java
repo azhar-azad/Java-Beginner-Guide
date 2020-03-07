@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.azad.practice.java.try_this_projects.no_2_2.LogicalOpTable;
 import com.azad.practice.java.try_this_projects.no_3_1.Help;
 import com.azad.practice.java.try_this_projects.no_3_2.Help2;
+import com.azad.practice.java.try_this_projects.no_3_3.Help3;
 
 public class TryThisProjectsMainClass {
 
@@ -29,12 +30,19 @@ public class TryThisProjectsMainClass {
 //		Help help = new Help();
 //		help.runProgram();
 		
+//		/*
+//		 * Try This 3-2 ------------ Help2 --------------
+//		 */
+//		System.out.println("Try This 3-2: Help2");
+//		Help2 help2 = new Help2();
+//		help2.runProgram();
+		
 		/*
-		 * Try This 3-2 ------------ Help2 --------------
+		 * Try This 3-3 ------------ Help3 --------------
 		 */
-		System.out.println("Try This 3-2: Help2");
-		Help2 help2 = new Help2();
-		help2.runProgram();
+		System.out.println("Try This 3-3: Help3");
+		Help3 help3 = new Help3();
+		help3.runProgram();
 	}
 
 }
