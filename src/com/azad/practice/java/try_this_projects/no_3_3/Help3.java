@@ -101,7 +101,7 @@ public class Help3 {
 			System.out.println("Invalid input");
 			return;
 		}
-
+ 
 		System.out.println(subject[helpIndex - 1]);
 		System.out.println("========");
 		System.out.println(description[helpIndex - 1]);
