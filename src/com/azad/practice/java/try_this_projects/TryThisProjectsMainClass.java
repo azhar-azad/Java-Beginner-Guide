@@ -6,6 +6,7 @@ import com.azad.practice.java.try_this_projects.no_2_2.LogicalOpTable;
 import com.azad.practice.java.try_this_projects.no_3_1.Help;
 import com.azad.practice.java.try_this_projects.no_3_2.Help2;
 import com.azad.practice.java.try_this_projects.no_3_3.Help3;
+import com.azad.practice.java.try_this_projects.no_5_1.BubbleSort;
 
 public class TryThisProjectsMainClass {
 
@@ -37,12 +38,24 @@ public class TryThisProjectsMainClass {
 //		Help2 help2 = new Help2();
 //		help2.runProgram();
 		
+//		/*
+//		 * Try This 3-3 ------------ Help3 --------------
+//		 */
+//		System.out.println("Try This 3-3: Help3");
+//		Help3 help3 = new Help3();
+//		help3.runProgram();
+		
 		/*
-		 * Try This 3-3 ------------ Help3 --------------
+		 * Try This 5-1 ------------ BubbleSort --------------
 		 */
-		System.out.println("Try This 3-3: Help3");
-		Help3 help3 = new Help3();
-		help3.runProgram();
+		System.out.println("Try This 5-1: BubbleSort");
+		int[] nums = {3, 2, 5};
+		BubbleSort bubbleSort = new BubbleSort(nums);
+		System.out.println(bubbleSort.getSize());
+		bubbleSort.printUnsorted();
+		bubbleSort.sort();
+		bubbleSort.printSorted();
+		bubbleSort.printUnsorted();
 	}
 
 }
