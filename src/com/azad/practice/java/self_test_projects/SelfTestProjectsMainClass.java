@@ -6,6 +6,7 @@ import com.azad.practice.java.self_test_projects.chapter_2_10.PrimeNumbers;
 import com.azad.practice.java.self_test_projects.chapter_3_1.KeyboardInput;
 import com.azad.practice.java.self_test_projects.chapter_3_10.AsciiLowerUpper;
 import com.azad.practice.java.self_test_projects.chapter_3_9.ForControl;
+import com.azad.practice.java.self_test_projects.chapter_5_4.BubbleSort;
 
 public class SelfTestProjectsMainClass {
 
@@ -39,15 +40,28 @@ public class SelfTestProjectsMainClass {
 //		forControl.runProgram();
 //		System.out.println();
 
+//		/*
+//		 * Self Test Chapter 3 No 10 - Write a program that reads characters from the
+//		 * keyboard. Have it convert all lower case letters to upper case, and vice
+//		 * versa, displaying the result. Make no change to any other character.
+//		 */
+//		System.out.println("Self Test Chapter 3 No 10");
+//		AsciiLowerUpper converter = new AsciiLowerUpper();
+//		converter.runProgram();
+//		System.out.println();
+
 		/*
-		 * Self Test Chapter 3 No 10 - Write a program that reads characters from the
-		 * keyboard. Have it convert all lower case letters to upper case, and vice
-		 * versa, displaying the result. Make no change to any other character.
+		 * Self Test Chapter 5 No 4 - Create a BubbleSort class that can sort an array
+		 * of Strings
+		 * [[ Strings will be sorted ignoring case ]]
 		 */
-		System.out.println("Self Test Chapter 3 No 10");
-		AsciiLowerUpper converter = new AsciiLowerUpper();
-		converter.runProgram();
-		System.out.println();
+		System.out.println("Self Test Chapter 5 No 4");
+		String[] strs = { "azad", "akib", "shawon", "Tipu", "ripon" };
+		BubbleSort bubbleSort = new BubbleSort(strs);
+		System.out.println(bubbleSort.getSize());
+		bubbleSort.printUnsorted();
+		bubbleSort.sort();
+		bubbleSort.printSorted();
 	}
 
 }
