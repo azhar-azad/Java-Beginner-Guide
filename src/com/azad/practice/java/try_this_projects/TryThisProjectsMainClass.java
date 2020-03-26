@@ -7,6 +7,7 @@ import com.azad.practice.java.try_this_projects.no_3_1.Help;
 import com.azad.practice.java.try_this_projects.no_3_2.Help2;
 import com.azad.practice.java.try_this_projects.no_3_3.Help3;
 import com.azad.practice.java.try_this_projects.no_5_1.BubbleSort;
+import com.azad.practice.java.try_this_projects.no_5_2.Queue;
 
 public class TryThisProjectsMainClass {
 
@@ -45,17 +46,35 @@ public class TryThisProjectsMainClass {
 //		Help3 help3 = new Help3();
 //		help3.runProgram();
 		
+//		/*
+//		 * Try This 5-1 ------------ BubbleSort --------------
+//		 */
+//		System.out.println("Try This 5-1: BubbleSort");
+//		int[] nums = {3, 2, 5};
+//		BubbleSort bubbleSort = new BubbleSort(nums);
+//		System.out.println(bubbleSort.getSize());
+//		bubbleSort.printUnsorted();
+//		bubbleSort.sort();
+//		bubbleSort.printSorted();
+		
 		/*
-		 * Try This 5-1 ------------ BubbleSort --------------
+		 * Try This 5-2 ------------ Queue --------------
 		 */
-		System.out.println("Try This 5-1: BubbleSort");
-		int[] nums = {3, 2, 5};
-		BubbleSort bubbleSort = new BubbleSort(nums);
-		System.out.println(bubbleSort.getSize());
-		bubbleSort.printUnsorted();
-		bubbleSort.sort();
-		bubbleSort.printSorted();
-		bubbleSort.printUnsorted();
+		System.out.println("Try This 5-2: Queue");
+		Queue bigQ = new Queue(100);
+		Queue smallQ = new Queue(10);
+		
+		System.out.println("Using bigQ to store the alphabet.");
+		for (int i = 0; i < 26; i++) {
+			bigQ.put((char) ('A' + i));
+		}
+		bigQ.show();
+		
+		System.out.println("Using smallQ to store the alphabet.");
+		for (int i = 0; i < 26; i++) {
+			smallQ.put((char) ('A' + i));
+		}
+		smallQ.show();
 	}
 
 }
