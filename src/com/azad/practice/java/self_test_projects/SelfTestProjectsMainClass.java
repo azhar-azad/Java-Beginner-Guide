@@ -7,6 +7,7 @@ import com.azad.practice.java.self_test_projects.chapter_3_1.KeyboardInput;
 import com.azad.practice.java.self_test_projects.chapter_3_10.AsciiLowerUpper;
 import com.azad.practice.java.self_test_projects.chapter_3_9.ForControl;
 import com.azad.practice.java.self_test_projects.chapter_5_4.BubbleSort;
+import com.azad.practice.java.self_test_projects.chapter_5_7.XorEncryption;
 
 public class SelfTestProjectsMainClass {
 
@@ -50,18 +51,42 @@ public class SelfTestProjectsMainClass {
 //		converter.runProgram();
 //		System.out.println();
 
+//		/*
+//		 * Self Test Chapter 5 No 4 - Create a BubbleSort class that can sort an array
+//		 * of Strings
+//		 * [[ Strings will be sorted ignoring case ]]
+//		 */
+//		System.out.println("Self Test Chapter 5 No 4");
+//		String[] strs = { "azad", "akib", "shawon", "Tipu", "ripon" };
+//		BubbleSort bubbleSort = new BubbleSort(strs);
+//		System.out.println(bubbleSort.getSize());
+//		bubbleSort.printUnsorted();
+//		bubbleSort.sort();
+//		bubbleSort.printSorted();
+		
 		/*
-		 * Self Test Chapter 5 No 4 - Create a BubbleSort class that can sort an array
-		 * of Strings
-		 * [[ Strings will be sorted ignoring case ]]
+		 * Self Test Chapter 5 No 7 - XOR encryption
 		 */
-		System.out.println("Self Test Chapter 5 No 4");
-		String[] strs = { "azad", "akib", "shawon", "Tipu", "ripon" };
-		BubbleSort bubbleSort = new BubbleSort(strs);
-		System.out.println(bubbleSort.getSize());
-		bubbleSort.printUnsorted();
-		bubbleSort.sort();
-		bubbleSort.printSorted();
+		System.out.println("Self Test Chapter 5 No 7");
+		XorEncryption cipher = new XorEncryption("This is a test", "azadakib");
+		System.out.print("original: ");
+		cipher.showOriginal();
+		System.out.print("encrypted: ");
+		cipher.showEncryptedMsg();
+		System.out.print("decrypted: ");
+		cipher.showDecryptedMsg();
+		
+		cipher.encrypt();
+		System.out.print("encrypted: ");
+		cipher.showEncryptedMsg();
+		System.out.print("decrypted: ");
+		cipher.showDecryptedMsg();
+		
+		cipher.decrypt();
+		System.out.print("encrypted: ");
+		cipher.showEncryptedMsg();
+		System.out.print("decrypted: ");
+		cipher.showDecryptedMsg();
 	}
 
 }
