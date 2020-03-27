@@ -9,6 +9,7 @@ import com.azad.practice.java.try_this_projects.no_3_3.Help3;
 import com.azad.practice.java.try_this_projects.no_5_1.BubbleSort;
 import com.azad.practice.java.try_this_projects.no_5_2.Queue;
 import com.azad.practice.java.try_this_projects.no_5_3.ShowBits;
+import com.azad.practice.java.try_this_projects.no_6_3.QuickSort;
 
 public class TryThisProjectsMainClass {
 
@@ -77,27 +78,50 @@ public class TryThisProjectsMainClass {
 //		}
 //		smallQ.show();
 		
+//		/*
+//		 * Try This 5-3 ------------ ShowBits --------------
+//		 */
+//		System.out.println("Try This 5-3: ShowBits");
+//		
+//		ShowBits b = new ShowBits(8);
+//		ShowBits i = new ShowBits(32);
+//		ShowBits li = new ShowBits(64);
+//		
+//		System.out.println("123 in Binary: ");
+//		b.show(123);
+//		
+//		System.out.println("\n87987 in Binary: ");
+//		i.show(87987);
+//		
+//		System.out.println("\n237658768 in Binary: ");
+//		li.show(237658768);
+//		
+//		// you can also show low-order bits of any integer
+//		System.out.println("\nLow order 8 bits of 87987 in binary: ");
+//		b.show(87987);
+		
 		/*
-		 * Try This 5-3 ------------ ShowBits --------------
+		 * Try This 6-3 ------------ Quicksort --------------
 		 */
-		System.out.println("Try This 5-3: ShowBits");
+		System.out.println("Try This 6-3: Quicksort");
 		
-		ShowBits b = new ShowBits(8);
-		ShowBits i = new ShowBits(32);
-		ShowBits li = new ShowBits(64);
+		char[] a = { 'd', 'x', 'a', 'r', 'p', 'j', 'i' };
 		
-		System.out.println("123 in Binary: ");
-		b.show(123);
+		System.out.print("Original Array: ");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]);
+		}
 		
-		System.out.println("\n87987 in Binary: ");
-		i.show(87987);
+		System.out.println();
 		
-		System.out.println("\n237658768 in Binary: ");
-		li.show(237658768);
+		// now sort the array
+		QuickSort.qsort(a);
 		
-		// you can also show low-order bits of any integer
-		System.out.println("\nLow order 8 bits of 87987 in binary: ");
-		b.show(87987);
+		System.out.print("Sorted Array: ");
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(a[i]);
+		}
+
 	}
 
 }
