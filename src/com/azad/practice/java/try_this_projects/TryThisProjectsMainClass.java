@@ -10,6 +10,7 @@ import com.azad.practice.java.try_this_projects.no_5_1.BubbleSort;
 import com.azad.practice.java.try_this_projects.no_5_2.Queue;
 import com.azad.practice.java.try_this_projects.no_5_3.ShowBits;
 import com.azad.practice.java.try_this_projects.no_6_3.QuickSort;
+import com.azad.practice.java.try_this_projects.no_7_1.Truck;
 
 public class TryThisProjectsMainClass {
 
@@ -100,27 +101,48 @@ public class TryThisProjectsMainClass {
 //		System.out.println("\nLow order 8 bits of 87987 in binary: ");
 //		b.show(87987);
 		
+//		/*
+//		 * Try This 6-3 ------------ Quicksort --------------
+//		 */
+//		System.out.println("Try This 6-3: Quicksort");
+//		
+//		char[] a = { 'd', 'x', 'a', 'r', 'p', 'j', 'i' };
+//		
+//		System.out.print("Original Array: ");
+//		for (int i = 0; i < a.length; i++) {
+//			System.out.print(a[i]);
+//		}
+//		
+//		System.out.println();
+//		
+//		// now sort the array
+//		QuickSort.qsort(a);
+//		
+//		System.out.print("Sorted Array: ");
+//		for (int i = 0; i < a.length; i++) {
+//			System.out.print(a[i]);
+//		}
+		
 		/*
-		 * Try This 6-3 ------------ Quicksort --------------
+		 * Try This 7-1 ------------ TruckDemo --------------
 		 */
-		System.out.println("Try This 6-3: Quicksort");
+		System.out.println("Try This 6-3: TruckDemo");
 		
-		char[] a = { 'd', 'x', 'a', 'r', 'p', 'j', 'i' };
+		// construct some trucks
+		Truck semi = new Truck(2, 200, 7, 44000);
+		Truck pickup = new Truck(3, 28, 15, 2000);
+		double gallons; 
+		int distance = 252;
 		
-		System.out.print("Original Array: ");
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]);
-		}
+		gallons = semi.fuelNeeded(distance);
 		
-		System.out.println();
+		System.out.println("Semi can carry " + semi.getCargocap() + " pounds.");
+		System.out.println("To go " + distance + " miles semi needs " + gallons + " gallons of fuel.\n");
 		
-		// now sort the array
-		QuickSort.qsort(a);
+		gallons = pickup.fuelNeeded(distance);
 		
-		System.out.print("Sorted Array: ");
-		for (int i = 0; i < a.length; i++) {
-			System.out.print(a[i]);
-		}
+		System.out.println("Pickup can carry " + pickup.getCargocap() + " pounds.");
+		System.out.println("To go " + distance + " miles semi needs " + gallons + " gallons of fuel.\n");
 
 	}
 
