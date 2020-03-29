@@ -8,8 +8,11 @@ import com.azad.practice.java.self_test_projects.chapter_3_10.AsciiLowerUpper;
 import com.azad.practice.java.self_test_projects.chapter_3_9.ForControl;
 import com.azad.practice.java.self_test_projects.chapter_5_4.BubbleSort;
 import com.azad.practice.java.self_test_projects.chapter_5_7.XorEncryption;
+import com.azad.practice.java.self_test_projects.chapter_6_3.Stack;
 
 public class SelfTestProjectsMainClass {
+
+	private static Stack stack4;
 
 	public static void main(String[] args) throws IOException {
 
@@ -64,29 +67,55 @@ public class SelfTestProjectsMainClass {
 //		bubbleSort.sort();
 //		bubbleSort.printSorted();
 		
+//		/*
+//		 * Self Test Chapter 5 No 7 - XOR encryption
+//		 */
+//		System.out.println("Self Test Chapter 5 No 7");
+//		XorEncryption cipher = new XorEncryption("This is a test", "azadakib");
+//		System.out.print("original: ");
+//		cipher.showOriginal();
+//		System.out.print("encrypted: ");
+//		cipher.showEncryptedMsg();
+//		System.out.print("decrypted: ");
+//		cipher.showDecryptedMsg();
+//		
+//		cipher.encrypt();
+//		System.out.print("encrypted: ");
+//		cipher.showEncryptedMsg();
+//		System.out.print("decrypted: ");
+//		cipher.showDecryptedMsg();
+//		
+//		cipher.decrypt();
+//		System.out.print("encrypted: ");
+//		cipher.showEncryptedMsg();
+//		System.out.print("decrypted: ");
+//		cipher.showDecryptedMsg();
+		
 		/*
-		 * Self Test Chapter 5 No 7 - XOR encryption
+		 * Self Test Chapter 6 No 3 - Stack implementation
 		 */
-		System.out.println("Self Test Chapter 5 No 7");
-		XorEncryption cipher = new XorEncryption("This is a test", "azadakib");
-		System.out.print("original: ");
-		cipher.showOriginal();
-		System.out.print("encrypted: ");
-		cipher.showEncryptedMsg();
-		System.out.print("decrypted: ");
-		cipher.showDecryptedMsg();
+		System.out.println("Self Test Chapter 6 No 3");
 		
-		cipher.encrypt();
-		System.out.print("encrypted: ");
-		cipher.showEncryptedMsg();
-		System.out.print("decrypted: ");
-		cipher.showDecryptedMsg();
+		Stack stack1 = new Stack();
+		Stack stack2 = new Stack(5);
+		char[] chars = {'a', 'b', 'c', 'd', 'e'};
+		Stack stack3 = new Stack(chars);
 		
-		cipher.decrypt();
-		System.out.print("encrypted: ");
-		cipher.showEncryptedMsg();
-		System.out.print("decrypted: ");
-		cipher.showDecryptedMsg();
+		System.out.println("stack1 size: " + stack1.size());
+		System.out.println("stack2 size: " + stack2.size());
+		System.out.println("stack3 size: " + stack3.size());
+		
+		for (int i = 0; i < 3; i++) {
+			stack1.push(chars[i]);
+			stack2.push(chars[i]);
+			stack3.push(chars[i]);
+		}
+		
+		for (int i = 0; i < 3; i++) {
+			System.out.println("stack1 pop: " + stack1.pop());
+			System.out.println("stack2 pop: " + stack2.pop());
+			System.out.println("stack3 pop: " + stack3.pop());
+		}
 	}
 
 }
